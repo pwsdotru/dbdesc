@@ -44,4 +44,5 @@ function command_line_banner( $message = "" ) {
 	}
 	echo "Usage: ".basename(__FILE__)." --host=db_host --user=db_user --password=db_password --base=db_name --out=outputfile.html\n";
 }
+
 ?>
