@@ -102,12 +102,12 @@ function command_line_banner( $message = "" ) {
 }
 
 function buidContextEntry($name) {
-	$res = "<li><a href=\"#" . $name . "\">" . $name . "</a></li>\n";
+	$res = "<li><a href=\"#" . $name . "\">" . $name . "</a>\n - \n</li>\n";
 	return $res;
 }
 
 function buildTableEntry($name, $fields) {
-	$res = "\n<a name=\"" . $name . "\"></a>\n<h3>" . $name . "</h3>\n\n";
+	$res = "\n<a name=\"" . $name . "\"></a>\n<h3>" . $name . "</h3>\n<p>\n\n</p>\n\n";
 	$res .= "<table border=\"1\">\n";
 	$res .= "<tr><th>Field</th><th>Type</th><th>Default</th><th>Null</th><th>Key</th><th>Description</th></tr>\n";
 
